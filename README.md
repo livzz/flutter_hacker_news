@@ -1,8 +1,3 @@
-# flutter_news
+# Hacker News Application
 
-A new Flutter application.
-
-## Getting Started
-
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
+A Flutter application that uses hacker news api to fetch news with optimized network request.
