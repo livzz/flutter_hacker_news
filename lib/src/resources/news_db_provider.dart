@@ -8,8 +8,12 @@ import 'dart:async';
 import '../models/item_model.dart';
 import 'repository.dart';
 
-class NewsDbProvider implements Source,Cache{
+class NewsDbProvider implements Source,Cache {
   Database db;
+
+  NewsDbProvider(){
+    init();
+  }
 
   void init() async {
     Directory docDir = await getApplicationDocumentsDirectory();
@@ -24,6 +28,8 @@ class NewsDbProvider implements Source,Cache{
             type TEXT,
             by TEXT,
             text TEXT,
+            time INTEGER,
+            score INTEGER,
             parent INTEGER,
             kids BLOG,
             dead INTEGER,
