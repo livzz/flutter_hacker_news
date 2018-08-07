@@ -43,4 +43,9 @@ class StoriesBloc {
     _itemsOutput.close();
     _itemFetcher.close();
   }
+
+  clearCache() {
+    return _repository.clearCache();
+  }
+
 }
