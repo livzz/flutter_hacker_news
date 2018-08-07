@@ -11,7 +11,7 @@ class NewsList extends StatelessWidget {
     final StoriesBloc bloc = StoriesProvider.of(context);
 
     //TODO: not efficient refactor needed
-    bloc.fetchTopIds();
+//    bloc.fetchTopIds();
 
     return Scaffold(
       appBar: AppBar(
